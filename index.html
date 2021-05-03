@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Great CSS toolkit -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Website Template</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav-header -->
+          <div class="nav-header">
+            <button class="nav-toggle" onclick="console.log('click')">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="#contact" class="scroll-link">contact</a>
+              </li>
+              <li>
+                <a href="#gallery" class="scroll-link">gallery</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>Philip Gistedt</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            consequat magna auctor hendrerit posuere. Aliquam at diam ut magna
+            egestas tincidunt. Cras ut porta enim. Integer id rhoncus erat. Ut
+            convallis arcu nec magna ultrices, sit amet dictum diam dictum.
+          </p>
+          <a href="#tours" class="scroll-link btn btn-white">show Gallery</a>
+        </div>
+      </div>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>about</h2>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="contact">
+      <div class="title" class="section">
+        <h2>contact</h2>
+      </div>
+    </section>
+    <!-- tours -->
+    <section id="gallery">
+      <div class="title" class="section">
+        <h2>gallery</h2>
+      </div>
+    </section>
+    <footer class="section">
+      <p>
+        copyright &copy; Philip Gistedt
+        <span id="date">{}</span>
+        . all rights reserved
+      </p>
+    </footer>
+    <!-- back to top button -->
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </body>
+</html>
