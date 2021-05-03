@@ -27,6 +27,15 @@ window.addEventListener('scroll', () => {
   const navHeight = nav.getBoundingClientRect().height;
 
   if (scrollHeight > navHeight) {
+    nav.classList.add('transparent-nav');
+    console.log("change color");
+  } else {
+    nav.classList.remove('transparent-nav');
+  }
+  //TODO: When scrolling down navheight get transparent
+  //Dynamic picture in responsive mode
+
+  if (scrollHeight >= 0) {
     nav.classList.add('fixed-nav');
   } else {
     nav.classList.remove('fixed-nav');
@@ -68,16 +77,16 @@ scrollLinks.forEach(link => {
     });
     linksContainer.style.height = 0;
 
-    const prevScrollpos = window.pageYOffset;
-    window.onscroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        nav.style.top = '0';
-      } else {
-        nav.style.top = '-82px';
-      }
-      prevScrollpos = currentScrollPos;
-    };
+    // const prevScrollpos = window.pageYOffset;
+    // window.onscroll = () => {
+    //   const currentScrollPos = window.pageYOffset;
+    //   if (prevScrollpos > currentScrollPos) {
+    //     nav.style.top = '0';
+    //   } else {
+    //     nav.style.top = '-82px';
+    //   }
+    //   prevScrollpos = currentScrollPos;
+    // };
   });
 });
 
